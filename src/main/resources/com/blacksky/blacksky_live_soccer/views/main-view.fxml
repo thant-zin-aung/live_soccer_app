@@ -1,0 +1,1272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<ScrollPane fx:id="scrollPane" fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" onKeyPressed="#handleKeyPress" onKeyReleased="#handleKeyRelease" prefHeight="768.0" prefWidth="1366.0" styleClass="scrollpane" stylesheets="@../stylesheets/app-style.css" vbarPolicy="ALWAYS" vvalue="0.79" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.blacksky.blacksky_live_soccer.controllers.MainController">
+   <content>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" styleClass="flowpane" stylesheets="@../stylesheets/app-style.css">
+         <children>
+            <AnchorPane fx:id="homeInfoWrapper" prefHeight="593.0" prefWidth="1366.0" stylesheets="@../stylesheets/app-style.css">
+               <children>
+                  <AnchorPane layoutY="137.0" opacity="0.69" prefHeight="280.0" prefWidth="800.0" stylesheets="@../stylesheets/app-style.css" AnchorPane.bottomAnchor="176.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="137.0">
+                     <styleClass>
+                        <String fx:value="overlay" />
+                        <String fx:value="premier-league-wrapper" />
+                     </styleClass>
+                     <effect>
+                        <DropShadow height="48.85" radius="22.825000000000003" width="44.45">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </AnchorPane>
+                  <AnchorPane layoutY="137.0" prefHeight="280.0" prefWidth="800.0" style="-fx-background-color: transparent;" stylesheets="@../stylesheets/app-style.css" AnchorPane.bottomAnchor="176.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="137.0">
+                     <styleClass>
+                        <String fx:value="overlay" />
+                        <String fx:value="premier-league-wrapper" />
+                     </styleClass>
+                     <children>
+                        <Label layoutX="83.0" layoutY="24.0" prefHeight="45.0" prefWidth="451.0" styleClass="app-title-wrapper" stylesheets="@../stylesheets/app-style.css" text="Thant Zin Aung - Live Football">
+                           <font>
+                              <Font name="Arial Black" size="30.0" />
+                           </font>
+                        </Label>
+                        <Text layoutX="24.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="sub-app-title-wrapper" text="Streaming live football matches in high quality channels">
+                           <font>
+                              <Font name="Roboto Bold" size="17.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="24.0" layoutY="140.0" lineSpacing="1.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="app-intro" text="Thant Zin Aung Live page: Official website www.tzafootballlive.infinityfreeapp.com to watch live football with the best Myanmar commentary high-speed links. Stream all the matches that are available in this web based application. You can watch all the matches with high class channels which are no buffering and provided by Blacksky. For SD resolution 3-5 MB, for HD resolution 5-7 MB is recommended and for better feeling experience with FHD resolution we recommended your internet speed to watch within 7-10mb. All the functionality provided in this website are created and developed by Thant Zin Aung." wrappingWidth="751.28173828125">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Text>
+                        <Button layoutX="595.0" layoutY="218.0" mnemonicParsing="false" styleClass="load-more-data-button" text="Load More Data &gt;&gt;&gt;" />
+                        <ImageView fitHeight="54.0" fitWidth="53.0" layoutX="14.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/app_logos/app-logo.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <effect>
+                        <DropShadow height="48.85" radius="22.825000000000003" width="44.45">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </AnchorPane>
+                  <HBox alignment="CENTER" fillHeight="false" layoutY="516.0" opacity="0.9" prefHeight="77.0" prefWidth="1366.0" spacing="50.0" styleClass="channel-wrapper" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="516.0">
+                     <children>
+                        <ImageView fitHeight="54.0" fitWidth="105.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/channel_logos/canal_plus_logo.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="61.0" fitWidth="108.0" layoutX="593.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/channel_logos/sky_sports_logo.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="68.0" fitWidth="121.0" layoutX="649.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/channel_logos/nbcsn_logo.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="35.0" fitWidth="90.0" layoutX="657.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/channel_logos/espn_logo.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="69.0" fitWidth="93.0" layoutX="823.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/channel_logos/bein_sports_logo.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="69.0" fitWidth="93.0" layoutX="913.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/channel_logos/usa_network_logo.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="61.0" fitWidth="113.0" layoutX="974.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/channel_logos/bt_sports_logo.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="61.0" fitWidth="113.0" layoutX="1041.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/channel_logos/eleven_sports_logo.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="53.0" fitWidth="54.0" layoutX="713.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/channel_logos/dazn_logo.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </children>
+               <styleClass>
+                  <String fx:value="image-wrapper" />
+                  <String fx:value="home-background-wrapper" />
+               </styleClass>
+            </AnchorPane>
+            <AnchorPane fx:id="premierLeagueInfoWrapper" minHeight="593.0" minWidth="1366.0" prefHeight="593.0" prefWidth="1366.0">
+               <styleClass>
+                  <String fx:value="image-wrapper" />
+                  <String fx:value="premier-league-background-wrapper" />
+               </styleClass>
+            </AnchorPane>
+            <AnchorPane fx:id="bundesligaInfoWrapper" layoutX="10.0" layoutY="603.0" minHeight="593.0" minWidth="1366.0" prefHeight="593.0" prefWidth="1366.0">
+               <styleClass>
+                  <String fx:value="image-wrapper" />
+                  <String fx:value="bundesliga-background-wrapper" />
+               </styleClass>
+            </AnchorPane>
+            <AnchorPane fx:id="serieAInfoWrapper" layoutX="10.0" layoutY="1196.0" minHeight="593.0" minWidth="1366.0" prefHeight="593.0" prefWidth="1366.0">
+               <styleClass>
+                  <String fx:value="image-wrapper" />
+                  <String fx:value="serie-a-background-wrapper" />
+               </styleClass>
+            </AnchorPane>
+            <AnchorPane fx:id="laLigaInfoWrapper" layoutX="10.0" layoutY="1789.0" minHeight="593.0" minWidth="1366.0" prefHeight="593.0" prefWidth="1366.0">
+               <styleClass>
+                  <String fx:value="image-wrapper" />
+                  <String fx:value="la-liga-background-wrapper" />
+               </styleClass>
+            </AnchorPane>
+            <AnchorPane fx:id="ligue1InfoWrapper" layoutX="10.0" layoutY="2382.0" minHeight="593.0" minWidth="1366.0" prefHeight="593.0" prefWidth="1366.0">
+               <styleClass>
+                  <String fx:value="image-wrapper" />
+                  <String fx:value="ligue-1-background-wrapper" />
+               </styleClass>
+            </AnchorPane>
+            <AnchorPane fx:id="uefaChampionLeagueInfoWrapper" layoutX="10.0" layoutY="2975.0" minHeight="593.0" minWidth="1366.0" prefHeight="593.0" prefWidth="1366.0">
+               <styleClass>
+                  <String fx:value="image-wrapper" />
+                  <String fx:value="uefa-champion-league-background-wrapper" />
+               </styleClass>
+            </AnchorPane>
+            <AnchorPane fx:id="uefaEuropaLeagueInfoWrapper" layoutX="10.0" layoutY="3568.0" minHeight="593.0" minWidth="1366.0" prefHeight="593.0" prefWidth="1366.0">
+               <styleClass>
+                  <String fx:value="image-wrapper" />
+                  <String fx:value="uefa-europa-league-background-wrapper" />
+               </styleClass>
+            </AnchorPane>
+            <AnchorPane fx:id="englandChampionshipInfoWrapper" layoutX="10.0" layoutY="4161.0" minHeight="593.0" minWidth="1366.0" prefHeight="593.0" prefWidth="1366.0">
+               <styleClass>
+                  <String fx:value="image-wrapper" />
+                  <String fx:value="england-championship-background-wrapper" />
+               </styleClass>
+            </AnchorPane>
+            <AnchorPane fx:id="englandFaCupInfoWrapper" layoutX="10.0" layoutY="4754.0" minHeight="593.0" minWidth="1366.0" prefHeight="593.0" prefWidth="1366.0">
+               <styleClass>
+                  <String fx:value="image-wrapper" />
+                  <String fx:value="england-fa-cup-background-wrapper" />
+               </styleClass>
+            </AnchorPane>
+            <AnchorPane fx:id="euroChampionshipInfoWrapper" layoutX="10.0" layoutY="5347.0" minHeight="593.0" minWidth="1366.0" prefHeight="593.0" prefWidth="1366.0">
+               <styleClass>
+                  <String fx:value="image-wrapper" />
+                  <String fx:value="euro-championship-background-wrapper" />
+               </styleClass>
+            </AnchorPane>
+            <AnchorPane fx:id="worldCupInfoWrapper" layoutX="10.0" layoutY="5940.0" minHeight="593.0" minWidth="1366.0" prefHeight="593.0" prefWidth="1366.0">
+               <styleClass>
+                  <String fx:value="image-wrapper" />
+                  <String fx:value="world-cup-background-wrapper" />
+               </styleClass>
+               <children>
+                  <StackPane prefHeight="593.0" prefWidth="1366.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="593.0" stroke="BLACK" strokeType="INSIDE" styleClass="rectangle-overlay" width="1366.0" />
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <HBox fx:id="worldCupLiveWrapper" alignment="CENTER" fillHeight="false" layoutX="39.0" layoutY="23.0" prefHeight="20.0" prefWidth="103.0" spacing="10.0" styleClass="match-live-badge-wrapper">
+                                 <children>
+                                    <Circle fx:id="worldCupLiveDot" fill="DODGERBLUE" radius="4.0" stroke="BLACK" strokeType="INSIDE" styleClass="match-live-dot" />
+                                    <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="match-live-text" text="LIVE NOW" />
+                                 </children>
+                              </HBox>
+                              <VBox alignment="CENTER" layoutX="378.0" layoutY="-2.0" prefHeight="80.0" prefWidth="610.0" spacing="10.0">
+                                 <children>
+                                    <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="watch-info-title" text="Enjoy The Best Quality Experience With No Buffering Channels" />
+                                    <Text fill="WHITE" fontSmoothingType="LCD" layoutX="95.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="watch-info-sub-title" text="Developed &amp; Provided By Thant Zin Aung" />
+                                 </children>
+                              </VBox>
+                              <HBox alignment="CENTER" layoutX="132.0" layoutY="125.0" prefHeight="343.0" prefWidth="1102.0" spacing="50.0">
+                                 <children>
+                                    <VBox alignment="CENTER" prefHeight="376.0" prefWidth="400.0" spacing="20.0">
+                                       <children>
+                                          <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/team_logos/1.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="play-team-name" text="Manchester United FC" textAlignment="CENTER" wrappingWidth="253.5078125" />
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" layoutX="411.0" layoutY="10.0" prefHeight="376.0" prefWidth="300.0" spacing="10.0">
+                                       <children>
+                                          <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="play-match-time" text="8 : 30 PM" />
+                                          <Text fill="WHITE" layoutX="117.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="play-match-date" text="2023 May 06" />
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" layoutX="236.0" layoutY="10.0" prefHeight="376.0" prefWidth="400.0" spacing="20.0">
+                                       <children>
+                                          <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/team_logos/2.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="play-team-name" text="France United FC" textAlignment="CENTER" wrappingWidth="253.5078125" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <Text fill="WHITE" fontSmoothingType="LCD" layoutX="318.0" layoutY="506.0" lineSpacing="1.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="watch-info-intro" text="Stream all the matches that are available in this web based application. You can watch all the matches with high class channels which are no buffering and provided by Blacksky. For SD resolution 3-5 MB, for HD resolution 5-7 MB is recommended and for better feeling experience with FHD resolution we recommended your internet speed to watch within 7-10mb. All the functionality provided in this website are created and developed by Thant Zin Aung." textAlignment="CENTER" wrappingWidth="730.13671875" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </StackPane>
+               </children>
+            </AnchorPane>
+            <HBox fx:id="goBackWrapper" alignment="CENTER" fillHeight="false" minHeight="70.0" prefHeight="60.0" prefWidth="1366.0" spacing="10.0" styleClass="back-wrapper">
+               <children>
+                  <VBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="200.0" spacing="5.0" style="-fx-border-color: white; -fx-border-width: 0 3px 0 0;">
+                     <children>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="go-back-title" text="List of total league">
+                           <font>
+                              <Font name="Arial Bold" size="23.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="apiStatus" fill="WHITE" layoutX="10.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="api-status" text="Sport API usage in percent: 1%">
+                           <font>
+                              <Font name="Arial Bold" size="11.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <padding>
+                        <Insets right="20.0" />
+                     </padding>
+                  </VBox>
+                  <Pane prefHeight="70.0" prefWidth="54.0" />
+                  <VBox alignment="CENTER_LEFT" layoutX="771.0" layoutY="15.0" prefHeight="60.0" prefWidth="177.0">
+                     <children>
+                        <Text fill="WHITE" layoutX="10.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="go-back-intro-text" text="- UEFA Europa League">
+                           <font>
+                              <Font name="Arial Bold" size="11.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="10.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="go-back-intro-text" text="- England Championship">
+                           <font>
+                              <Font name="Arial Bold" size="11.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="10.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="go-back-intro-text" text="- England FA Cup">
+                           <font>
+                              <Font name="Arial Bold" size="11.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER_LEFT" layoutX="747.0" layoutY="15.0" prefHeight="60.0" prefWidth="184.0">
+                     <children>
+                        <Text fill="WHITE" layoutX="10.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="go-back-intro-text" text="- UEFA Champion League">
+                           <font>
+                              <Font name="Arial Bold" size="11.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="10.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="go-back-intro-text" text="- La Liga">
+                           <font>
+                              <Font name="Arial Bold" size="11.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="10.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="go-back-intro-text" text="- Ligue 1">
+                           <font>
+                              <Font name="Arial Bold" size="11.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER_LEFT" layoutX="593.0" layoutY="15.0" prefHeight="60.0" prefWidth="145.0">
+                     <children>
+                        <Text fill="WHITE" layoutX="10.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="go-back-intro-text" text="- Premier League">
+                           <font>
+                              <Font name="Arial Bold" size="11.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="10.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="go-back-intro-text" text="- Bundesliga">
+                           <font>
+                              <Font name="Arial Bold" size="11.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="10.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="go-back-intro-text" text="- Serie A">
+                           <font>
+                              <Font name="Arial Bold" size="11.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER_LEFT" layoutX="842.0" layoutY="15.0" prefHeight="60.0" prefWidth="160.0" style="-fx-border-color: white; -fx-border-width: 0 3px 0 0;">
+                     <children>
+                        <Text fill="WHITE" layoutX="10.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="go-back-intro-text" text="- Euro Championship">
+                           <font>
+                              <Font name="Arial Bold" size="11.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="10.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="go-back-intro-text" text="- FIFA World Cup">
+                           <font>
+                              <Font name="Arial Bold" size="11.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="10.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" ">
+                           <font>
+                              <Font name="Arial Bold" size="11.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <Pane layoutX="443.0" layoutY="10.0" prefHeight="70.0" prefWidth="91.0" />
+                  <VBox alignment="CENTER" prefHeight="40.0" prefWidth="131.0" styleClass="go-back-button">
+                     <children>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="go-back-text" text="&lt;&lt;&lt; GO BACK">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <FlowPane fx:id="flowPane" alignment="CENTER" columnHalignment="CENTER" hgap="30.0" prefWidth="1299.0" vgap="30.0">
+               <VBox.margin>
+                  <Insets bottom="50.0" top="40.0" />
+               </VBox.margin>
+               <children>
+                  <HBox fx:id="waitingBox" alignment="CENTER" fillHeight="false" prefHeight="82.0" prefWidth="1263.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="82.0" prefWidth="1150.0">
+                           <children>
+                              <ProgressBar prefHeight="26.0" prefWidth="200.0" styleClass="top-bottom-progress-bar" />
+                              <VBox alignment="CENTER" prefHeight="67.0" prefWidth="850.0" styleClass="waiting-box">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="waiting-box-title" text="Retreving the matches data from server">
+                                       <font>
+                                          <Font name="Arial Bold" size="19.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="waiting-box-sub-title" text="Please wait for a moment">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </VBox>
+                              <ProgressBar layoutX="302.0" layoutY="14.0" prefWidth="200.0" styleClass="top-bottom-progress-bar" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <VBox fx:id="playButtonWrapper" alignment="CENTER" fillWidth="false" prefHeight="717.0" prefWidth="1366.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="107.0" prefWidth="1366.0" styleClass="english-title-wrapper">
+                           <children>
+                              <VBox alignment="CENTER" prefHeight="86.0" prefWidth="277.0" spacing="5.0">
+                                 <children>
+                                    <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="english-title" text="Watch The Live Matches With English Commentary Voice" />
+                                    <Text fill="WHITE" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="english-sub-title" text="This means that all the channel below are available in english voice broadcast channels and provided high quality no buffering channels." wrappingWidth="457.9832458496094" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" fillHeight="false" prefHeight="250.0" prefWidth="1256.0" spacing="40.0">
+                           <children>
+                              <VBox fx:id="efhdButton" onMouseClicked="#clickOnPlayButton" onMouseEntered="#hoverOnPlayButton" onMouseExited="#hoverExitOnPlayButton" prefHeight="146.0" prefWidth="350.0" styleClass="play-button">
+                                 <children>
+                                    <HBox prefHeight="59.0" prefWidth="350.0" spacing="10.0" style="-fx-border-color: white; -fx-border-width: 0 0 1px 0; -fx-border-style: dashed;">
+                                       <children>
+                                          <ImageView fitHeight="79.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/other_logos/play_button.png" />
+                                             </image>
+                                          </ImageView>
+                                          <VBox alignment="CENTER_LEFT" fillWidth="false" prefHeight="79.0" prefWidth="258.0" spacing="7.0">
+                                             <children>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="play-button-title" text="High Quality Resolution" wrappingWidth="228.4537353515625" />
+                                                <HBox alignment="BOTTOM_LEFT" fillHeight="false" prefHeight="17.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="play-button-sub-title" text="FHD ( 1920x1080 )   " />
+                                                      <HBox alignment="CENTER" prefHeight="11.0" prefWidth="71.0" styleClass="play-button-sub-title-2-wrapper">
+                                                         <children>
+                                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="play-button-sub-title-2" text="English" />
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                             </padding>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <Text fill="WHITE" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="play-button-intro" text="FHD Resolution provided the user to watch live stream with another next level feeling experience and give more satisfied to users. Recommended ( 7 - 10 MB ) speed." wrappingWidth="299.8387451171875" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox fx:id="ehdButton" layoutX="366.0" layoutY="62.0" onMouseClicked="#clickOnPlayButton" onMouseEntered="#hoverOnPlayButton" onMouseExited="#hoverExitOnPlayButton" prefHeight="146.0" prefWidth="350.0" styleClass="play-button">
+                                 <children>
+                                    <HBox prefHeight="59.0" prefWidth="350.0" spacing="10.0" style="-fx-border-color: white; -fx-border-width: 0 0 1px 0; -fx-border-style: dashed;">
+                                       <children>
+                                          <ImageView fitHeight="79.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/other_logos/play_button.png" />
+                                             </image>
+                                          </ImageView>
+                                          <VBox alignment="CENTER_LEFT" fillWidth="false" prefHeight="79.0" prefWidth="260.0" spacing="7.0">
+                                             <children>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="play-button-title" text="Medium Quality Resolution" wrappingWidth="236.4537353515625" />
+                                                <HBox alignment="BOTTOM_LEFT" fillHeight="false" prefHeight="17.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="play-button-sub-title" text="HD ( 1280x720 )   " />
+                                                      <HBox alignment="CENTER" prefHeight="11.0" prefWidth="71.0" styleClass="play-button-sub-title-2-wrapper">
+                                                         <children>
+                                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="play-button-sub-title-2" text="English" />
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                             </padding>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <Text fill="WHITE" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="play-button-intro" text="HD Resolution provided the user to watch live stream with another next level feeling experience and give more satisfied to users. Recommended ( 5 - 7 MB ) speed." wrappingWidth="299.8387451171875" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox fx:id="esdButton" layoutX="541.0" layoutY="62.0" onMouseClicked="#clickOnPlayButton" onMouseEntered="#hoverOnPlayButton" onMouseExited="#hoverExitOnPlayButton" prefHeight="146.0" prefWidth="350.0" styleClass="play-button">
+                                 <children>
+                                    <HBox prefHeight="59.0" prefWidth="350.0" spacing="10.0" style="-fx-border-color: white; -fx-border-width: 0 0 1px 0; -fx-border-style: dashed;">
+                                       <children>
+                                          <ImageView fitHeight="79.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/other_logos/play_button.png" />
+                                             </image>
+                                          </ImageView>
+                                          <VBox alignment="CENTER_LEFT" fillWidth="false" prefHeight="79.0" prefWidth="260.0" spacing="7.0">
+                                             <children>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="play-button-title" text="Low Quality Resolution" wrappingWidth="237.4537353515625" />
+                                                <HBox alignment="BOTTOM_LEFT" fillHeight="false" prefHeight="17.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="play-button-sub-title" text="SD ( 720x480 )   " />
+                                                      <HBox alignment="CENTER" prefHeight="11.0" prefWidth="71.0" styleClass="play-button-sub-title-2-wrapper">
+                                                         <children>
+                                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="play-button-sub-title-2" text="English" />
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                             </padding>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <Text fill="WHITE" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="play-button-intro" text="SD Resolution provided the user to watch live stream with another next level feeling experience and give more satisfied to users. Recommended ( 3 - 5 MB ) speed." wrappingWidth="299.8387451171875" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="230.0" prefHeight="107.0" prefWidth="1366.0" styleClass="english-title-wrapper">
+                           <children>
+                              <VBox alignment="CENTER" prefHeight="86.0" prefWidth="277.0" spacing="5.0">
+                                 <children>
+                                    <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="english-title" text="Watch The Live Matches With Non-English Commentary Voice" />
+                                    <Text fill="WHITE" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="english-sub-title" text="This means that all the channel below are not available in english voice broadcast channels but still provided high quality no buffering channels." wrappingWidth="457.9832458496094" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" fillHeight="false" layoutX="65.0" layoutY="159.0" prefHeight="250.0" prefWidth="1256.0" spacing="40.0">
+                           <children>
+                              <VBox fx:id="nefhdButton" onMouseClicked="#clickOnPlayButton" onMouseEntered="#hoverOnPlayButton" onMouseExited="#hoverExitOnPlayButton" prefHeight="146.0" prefWidth="350.0" styleClass="play-button">
+                                 <children>
+                                    <HBox prefHeight="59.0" prefWidth="350.0" spacing="10.0" style="-fx-border-color: white; -fx-border-width: 0 0 1px 0; -fx-border-style: dashed;">
+                                       <children>
+                                          <ImageView fitHeight="79.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/other_logos/play_button.png" />
+                                             </image>
+                                          </ImageView>
+                                          <VBox alignment="CENTER_LEFT" fillWidth="false" prefHeight="79.0" prefWidth="258.0" spacing="7.0">
+                                             <children>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="play-button-title" text="High Quality Resolution" wrappingWidth="228.4537353515625" />
+                                                <HBox alignment="BOTTOM_LEFT" fillHeight="false" prefHeight="17.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="play-button-sub-title" text="FHD ( 1920x1080 )   " />
+                                                      <HBox alignment="CENTER" prefHeight="11.0" prefWidth="71.0" styleClass="play-button-sub-title-2-wrapper">
+                                                         <children>
+                                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="play-button-sub-title-2" text="Not English" />
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                             </padding>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <Text fill="WHITE" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="play-button-intro" text="FHD Resolution provided the user to watch live stream with another next level feeling experience and give more satisfied to users. Recommended ( 7 - 10 MB ) speed." wrappingWidth="299.8387451171875" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox fx:id="nehdButton" layoutX="366.0" layoutY="62.0" onMouseClicked="#clickOnPlayButton" onMouseEntered="#hoverOnPlayButton" onMouseExited="#hoverExitOnPlayButton" prefHeight="146.0" prefWidth="350.0" styleClass="play-button">
+                                 <children>
+                                    <HBox prefHeight="59.0" prefWidth="350.0" spacing="10.0" style="-fx-border-color: white; -fx-border-width: 0 0 1px 0; -fx-border-style: dashed;">
+                                       <children>
+                                          <ImageView fitHeight="79.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/other_logos/play_button.png" />
+                                             </image>
+                                          </ImageView>
+                                          <VBox alignment="CENTER_LEFT" fillWidth="false" prefHeight="79.0" prefWidth="260.0" spacing="7.0">
+                                             <children>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="play-button-title" text="Medium Quality Resolution" wrappingWidth="236.4537353515625" />
+                                                <HBox alignment="BOTTOM_LEFT" fillHeight="false" prefHeight="17.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="play-button-sub-title" text="HD ( 1280x720 )   " />
+                                                      <HBox alignment="CENTER" prefHeight="11.0" prefWidth="71.0" styleClass="play-button-sub-title-2-wrapper">
+                                                         <children>
+                                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="play-button-sub-title-2" text="Not English" />
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                             </padding>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <Text fill="WHITE" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="play-button-intro" text="HD Resolution provided the user to watch live stream with another next level feeling experience and give more satisfied to users. Recommended ( 5 - 7 MB ) speed." wrappingWidth="299.8387451171875" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox fx:id="nesdButton" layoutX="541.0" layoutY="62.0" onMouseClicked="#clickOnPlayButton" onMouseEntered="#hoverOnPlayButton" onMouseExited="#hoverExitOnPlayButton" prefHeight="146.0" prefWidth="350.0" styleClass="play-button">
+                                 <children>
+                                    <HBox prefHeight="59.0" prefWidth="350.0" spacing="10.0" style="-fx-border-color: white; -fx-border-width: 0 0 1px 0; -fx-border-style: dashed;">
+                                       <children>
+                                          <ImageView fitHeight="79.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/other_logos/play_button.png" />
+                                             </image>
+                                          </ImageView>
+                                          <VBox alignment="CENTER_LEFT" fillWidth="false" prefHeight="79.0" prefWidth="260.0" spacing="7.0">
+                                             <children>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="play-button-title" text="Low Quality Resolution" wrappingWidth="237.4537353515625" />
+                                                <HBox alignment="BOTTOM_LEFT" fillHeight="false" prefHeight="17.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="play-button-sub-title" text="SD ( 720x480 )   " />
+                                                      <HBox alignment="CENTER" prefHeight="11.0" prefWidth="71.0" styleClass="play-button-sub-title-2-wrapper">
+                                                         <children>
+                                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="play-button-sub-title-2" text="Not English" />
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                             </padding>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <Text fill="WHITE" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="play-button-intro" text="SD Resolution provided the user to watch live stream with another next level feeling experience and give more satisfied to users. Recommended ( 3 - 5 MB ) speed." wrappingWidth="299.8387451171875" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="premierLeagueWrapper" layoutX="486.0" layoutY="10.0" onMouseEntered="#hoverOnLeagueWrapper" onMouseExited="#hoverExitOnLeagueWrapper" prefHeight="199.0" prefWidth="420.0" styleClass="league-wrapper">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" fillHeight="false" prefHeight="59.0" prefWidth="386.0" styleClass="league-title-wrapper">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="55.0" prefWidth="53.0">
+                                 <styleClass>
+                                    <String fx:value="league-logo" />
+                                    <String fx:value="premier-league-logo" />
+                                 </styleClass>
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </HBox>
+                              <VBox alignment="CENTER_LEFT" prefHeight="59.0" prefWidth="298.0" spacing="3.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="league-wrapper-title" text="Premier League">
+                                       <font>
+                                          <Font name="Arial Bold" size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="league-wrapper-sub-title" text="Country: England | Total matches: 5" />
+                                 </children>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="77.0" prefWidth="390.0">
+                           <children>
+                              <Text fill="#1e1e1e" fontSmoothingType="LCD" lineSpacing="1.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="league-wrapper-intro" text="Select and choose right league so you can see the data of live matches. All of the photos league title, fixture data and all desin principle are created and provided by individual freelance Java developer - Thant Zin Aung." wrappingWidth="371.0234375">
+                                 <font>
+                                    <Font name="Arial" size="11.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                           <padding>
+                              <Insets left="18.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="406.0">
+                           <children>
+                              <Button mnemonicParsing="false" onMouseClicked="#clickOnSeeMatchesButton" styleClass="see-matches-button" text="See Matches" />
+                           </children>
+                        </HBox>
+                     </children>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="0.6784313917160034" green="0.6784313917160034" blue="0.6784313917160034" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </VBox>
+                  <VBox fx:id="bundesligaWrapper" layoutX="482.0" layoutY="10.0" onMouseEntered="#hoverOnLeagueWrapper" onMouseExited="#hoverExitOnLeagueWrapper" prefHeight="199.0" prefWidth="420.0" styleClass="league-wrapper">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" fillHeight="false" prefHeight="59.0" prefWidth="386.0" styleClass="league-title-wrapper">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="58.0" prefWidth="57.0">
+                                 <styleClass>
+                                    <String fx:value="league-logo" />
+                                    <String fx:value="bundesliga-logo" />
+                                 </styleClass>
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </HBox>
+                              <VBox alignment="CENTER_LEFT" prefHeight="59.0" prefWidth="298.0" spacing="3.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="league-wrapper-title" text="Bundesliga">
+                                       <font>
+                                          <Font name="Arial Bold" size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="league-wrapper-sub-title" text="Country: Germany | Total matches: 9" />
+                                 </children>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="77.0" prefWidth="390.0">
+                           <children>
+                              <Text fill="#1e1e1e" fontSmoothingType="LCD" lineSpacing="1.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="league-wrapper-intro" text="Select and choose right league so you can see the data of live matches. All of the photos league title, fixture data and all desin principle are created and provided by individual freelance Java developer - Thant Zin Aung." wrappingWidth="371.0234375">
+                                 <font>
+                                    <Font name="Arial" size="11.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                           <padding>
+                              <Insets left="18.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="406.0">
+                           <children>
+                              <Button mnemonicParsing="false" onMouseClicked="#clickOnSeeMatchesButton" styleClass="see-matches-button" text="See Matches" />
+                           </children>
+                        </HBox>
+                     </children>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="0.6784313917160034" green="0.6784313917160034" blue="0.6784313917160034" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </VBox>
+                  <VBox fx:id="serieAWrapper" layoutX="707.0" layoutY="10.0" onMouseEntered="#hoverOnLeagueWrapper" onMouseExited="#hoverExitOnLeagueWrapper" prefHeight="199.0" prefWidth="420.0" styleClass="league-wrapper">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" fillHeight="false" prefHeight="59.0" prefWidth="386.0" styleClass="league-title-wrapper">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="58.0" prefWidth="54.0">
+                                 <styleClass>
+                                    <String fx:value="league-logo" />
+                                    <String fx:value="serie-a-logo" />
+                                 </styleClass>
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </HBox>
+                              <VBox alignment="CENTER_LEFT" prefHeight="59.0" prefWidth="298.0" spacing="3.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="league-wrapper-title" text="Serie A">
+                                       <font>
+                                          <Font name="Arial Bold" size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="league-wrapper-sub-title" text="Country: Italy | Total matches: 5" />
+                                 </children>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="77.0" prefWidth="390.0">
+                           <children>
+                              <Text fill="#1e1e1e" fontSmoothingType="LCD" lineSpacing="1.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="league-wrapper-intro" text="Select and choose right league so you can see the data of live matches. All of the photos league title, fixture data and all desin principle are created and provided by individual freelance Java developer - Thant Zin Aung." wrappingWidth="371.0234375">
+                                 <font>
+                                    <Font name="Arial" size="11.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                           <padding>
+                              <Insets left="18.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="406.0">
+                           <children>
+                              <Button mnemonicParsing="false" onMouseClicked="#clickOnSeeMatchesButton" styleClass="see-matches-button" text="See Matches" />
+                           </children>
+                        </HBox>
+                     </children>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="0.6784313917160034" green="0.6784313917160034" blue="0.6784313917160034" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </VBox>
+                  <VBox fx:id="laLigaWrapper" layoutX="932.0" layoutY="10.0" onMouseEntered="#hoverOnLeagueWrapper" onMouseExited="#hoverExitOnLeagueWrapper" prefHeight="199.0" prefWidth="420.0" styleClass="league-wrapper">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" fillHeight="false" prefHeight="59.0" prefWidth="386.0" styleClass="league-title-wrapper">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="56.0" prefWidth="58.0">
+                                 <styleClass>
+                                    <String fx:value="league-logo" />
+                                    <String fx:value="la-liga-logo" />
+                                 </styleClass>
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </HBox>
+                              <VBox alignment="CENTER_LEFT" prefHeight="59.0" prefWidth="298.0" spacing="3.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="league-wrapper-title" text="La Liga">
+                                       <font>
+                                          <Font name="Arial Bold" size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="league-wrapper-sub-title" text="Country: Spain | Total matches: 5" />
+                                 </children>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="77.0" prefWidth="390.0">
+                           <children>
+                              <Text fill="#1e1e1e" fontSmoothingType="LCD" lineSpacing="1.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="league-wrapper-intro" text="Select and choose right league so you can see the data of live matches. All of the photos league title, fixture data and all desin principle are created and provided by individual freelance Java developer - Thant Zin Aung." wrappingWidth="371.0234375">
+                                 <font>
+                                    <Font name="Arial" size="11.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                           <padding>
+                              <Insets left="18.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="406.0">
+                           <children>
+                              <Button mnemonicParsing="false" onMouseClicked="#clickOnSeeMatchesButton" styleClass="see-matches-button" text="See Matches" />
+                           </children>
+                        </HBox>
+                     </children>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="0.6784313917160034" green="0.6784313917160034" blue="0.6784313917160034" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </VBox>
+                  <VBox fx:id="ligue1Wrapper" layoutX="482.0" layoutY="229.0" onMouseEntered="#hoverOnLeagueWrapper" onMouseExited="#hoverExitOnLeagueWrapper" prefHeight="199.0" prefWidth="420.0" styleClass="league-wrapper">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" fillHeight="false" prefHeight="59.0" prefWidth="386.0" styleClass="league-title-wrapper">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="63.0" prefWidth="39.0">
+                                 <styleClass>
+                                    <String fx:value="league-logo" />
+                                    <String fx:value="ligue-1-logo" />
+                                 </styleClass>
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </HBox>
+                              <VBox alignment="CENTER_LEFT" prefHeight="59.0" prefWidth="298.0" spacing="3.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="league-wrapper-title" text="Ligue 1">
+                                       <font>
+                                          <Font name="Arial Bold" size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="league-wrapper-sub-title" text="Country: France | Total matches: 5" />
+                                 </children>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="77.0" prefWidth="390.0">
+                           <children>
+                              <Text fill="#1e1e1e" fontSmoothingType="LCD" lineSpacing="1.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="league-wrapper-intro" text="Select and choose right league so you can see the data of live matches. All of the photos league title, fixture data and all desin principle are created and provided by individual freelance Java developer - Thant Zin Aung." wrappingWidth="371.0234375">
+                                 <font>
+                                    <Font name="Arial" size="11.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                           <padding>
+                              <Insets left="18.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="406.0">
+                           <children>
+                              <Button mnemonicParsing="false" onMouseClicked="#clickOnSeeMatchesButton" styleClass="see-matches-button" text="See Matches" />
+                           </children>
+                        </HBox>
+                     </children>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="0.6784313917160034" green="0.6784313917160034" blue="0.6784313917160034" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </VBox>
+                  <VBox fx:id="uefaChampionLeagueWrapper" layoutX="707.0" layoutY="229.0" onMouseEntered="#hoverOnLeagueWrapper" onMouseExited="#hoverExitOnLeagueWrapper" prefHeight="199.0" prefWidth="420.0" styleClass="league-wrapper">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" fillHeight="false" prefHeight="59.0" prefWidth="386.0" styleClass="league-title-wrapper">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="59.0" prefWidth="58.0">
+                                 <styleClass>
+                                    <String fx:value="league-logo" />
+                                    <String fx:value="uefa-champion-league-logo" />
+                                 </styleClass>
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </HBox>
+                              <VBox alignment="CENTER_LEFT" prefHeight="59.0" prefWidth="298.0" spacing="3.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="league-wrapper-title" text="UEFA Champion League">
+                                       <font>
+                                          <Font name="Arial Bold" size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="league-wrapper-sub-title" text="Country: Europe | Total matches: 5" />
+                                 </children>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="77.0" prefWidth="390.0">
+                           <children>
+                              <Text fill="#1e1e1e" fontSmoothingType="LCD" lineSpacing="1.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="league-wrapper-intro" text="Select and choose right league so you can see the data of live matches. All of the photos league title, fixture data and all desin principle are created and provided by individual freelance Java developer - Thant Zin Aung." wrappingWidth="371.0234375">
+                                 <font>
+                                    <Font name="Arial" size="11.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                           <padding>
+                              <Insets left="18.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="406.0">
+                           <children>
+                              <Button mnemonicParsing="false" onMouseClicked="#clickOnSeeMatchesButton" styleClass="see-matches-button" text="See Matches" />
+                           </children>
+                        </HBox>
+                     </children>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="0.6784313917160034" green="0.6784313917160034" blue="0.6784313917160034" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </VBox>
+                  <VBox fx:id="uefaEuropaLeagueWrapper" layoutX="932.0" layoutY="229.0" onMouseEntered="#hoverOnLeagueWrapper" onMouseExited="#hoverExitOnLeagueWrapper" prefHeight="199.0" prefWidth="420.0" styleClass="league-wrapper">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" fillHeight="false" prefHeight="59.0" prefWidth="386.0" styleClass="league-title-wrapper">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="62.0" prefWidth="52.0">
+                                 <styleClass>
+                                    <String fx:value="league-logo" />
+                                    <String fx:value="uefa-europa-league-logo" />
+                                 </styleClass>
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </HBox>
+                              <VBox alignment="CENTER_LEFT" prefHeight="59.0" prefWidth="298.0" spacing="3.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="league-wrapper-title" text="UEFA Europa League">
+                                       <font>
+                                          <Font name="Arial Bold" size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="league-wrapper-sub-title" text="Country: Europe | Total matches: 5" />
+                                 </children>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="77.0" prefWidth="390.0">
+                           <children>
+                              <Text fill="#1e1e1e" fontSmoothingType="LCD" lineSpacing="1.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="league-wrapper-intro" text="Select and choose right league so you can see the data of live matches. All of the photos league title, fixture data and all desin principle are created and provided by individual freelance Java developer - Thant Zin Aung." wrappingWidth="371.0234375">
+                                 <font>
+                                    <Font name="Arial" size="11.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                           <padding>
+                              <Insets left="18.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="406.0">
+                           <children>
+                              <Button mnemonicParsing="false" onMouseClicked="#clickOnSeeMatchesButton" styleClass="see-matches-button" text="See Matches" />
+                           </children>
+                        </HBox>
+                     </children>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="0.6784313917160034" green="0.6784313917160034" blue="0.6784313917160034" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </VBox>
+                  <VBox fx:id="englandChampionshipWrapper" layoutX="482.0" layoutY="448.0" onMouseEntered="#hoverOnLeagueWrapper" onMouseExited="#hoverExitOnLeagueWrapper" prefHeight="199.0" prefWidth="420.0" styleClass="league-wrapper">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" fillHeight="false" prefHeight="59.0" prefWidth="386.0" styleClass="league-title-wrapper">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="52.0" prefWidth="44.0">
+                                 <styleClass>
+                                    <String fx:value="league-logo" />
+                                    <String fx:value="england-championship-logo" />
+                                 </styleClass>
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </HBox>
+                              <VBox alignment="CENTER_LEFT" prefHeight="59.0" prefWidth="298.0" spacing="3.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="league-wrapper-title" text="England Championship">
+                                       <font>
+                                          <Font name="Arial Bold" size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="league-wrapper-sub-title" text="Country: Italy | Total matches: 5" />
+                                 </children>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="77.0" prefWidth="390.0">
+                           <children>
+                              <Text fill="#1e1e1e" fontSmoothingType="LCD" lineSpacing="1.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="league-wrapper-intro" text="Select and choose right league so you can see the data of live matches. All of the photos league title, fixture data and all desin principle are created and provided by individual freelance Java developer - Thant Zin Aung." wrappingWidth="371.0234375">
+                                 <font>
+                                    <Font name="Arial" size="11.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                           <padding>
+                              <Insets left="18.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="406.0">
+                           <children>
+                              <Button mnemonicParsing="false" onMouseClicked="#clickOnSeeMatchesButton" styleClass="see-matches-button" text="See Matches" />
+                           </children>
+                        </HBox>
+                     </children>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="0.6784313917160034" green="0.6784313917160034" blue="0.6784313917160034" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </VBox>
+                  <VBox fx:id="englandFaCupWrapper" layoutX="707.0" layoutY="448.0" onMouseEntered="#hoverOnLeagueWrapper" onMouseExited="#hoverExitOnLeagueWrapper" prefHeight="199.0" prefWidth="420.0" styleClass="league-wrapper">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" fillHeight="false" prefHeight="59.0" prefWidth="386.0" styleClass="league-title-wrapper">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="58.0" prefWidth="56.0">
+                                 <styleClass>
+                                    <String fx:value="league-logo" />
+                                    <String fx:value="england-fa-logo" />
+                                 </styleClass>
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </HBox>
+                              <VBox alignment="CENTER_LEFT" prefHeight="59.0" prefWidth="298.0" spacing="3.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="league-wrapper-title" text="England FA Cup">
+                                       <font>
+                                          <Font name="Arial Bold" size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="league-wrapper-sub-title" text="Country: Italy | Total matches: 5" />
+                                 </children>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="77.0" prefWidth="390.0">
+                           <children>
+                              <Text fill="#1e1e1e" fontSmoothingType="LCD" lineSpacing="1.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="league-wrapper-intro" text="Select and choose right league so you can see the data of live matches. All of the photos league title, fixture data and all desin principle are created and provided by individual freelance Java developer - Thant Zin Aung." wrappingWidth="371.0234375">
+                                 <font>
+                                    <Font name="Arial" size="11.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                           <padding>
+                              <Insets left="18.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="406.0">
+                           <children>
+                              <Button mnemonicParsing="false" onMouseClicked="#clickOnSeeMatchesButton" styleClass="see-matches-button" text="See Matches" />
+                           </children>
+                        </HBox>
+                     </children>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="0.6784313917160034" green="0.6784313917160034" blue="0.6784313917160034" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </VBox>
+                  <VBox fx:id="euroChampionshipWrapper" layoutX="932.0" layoutY="448.0" onMouseEntered="#hoverOnLeagueWrapper" onMouseExited="#hoverExitOnLeagueWrapper" prefHeight="199.0" prefWidth="420.0" styleClass="league-wrapper">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" fillHeight="false" prefHeight="59.0" prefWidth="386.0" styleClass="league-title-wrapper">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="63.0" prefWidth="50.0">
+                                 <styleClass>
+                                    <String fx:value="league-logo" />
+                                    <String fx:value="euro-championship-logo" />
+                                 </styleClass>
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </HBox>
+                              <VBox alignment="CENTER_LEFT" prefHeight="59.0" prefWidth="298.0" spacing="3.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="league-wrapper-title" text="Euro Championship">
+                                       <font>
+                                          <Font name="Arial Bold" size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="league-wrapper-sub-title" text="Country: World | Total matches: 5" />
+                                 </children>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="77.0" prefWidth="390.0">
+                           <children>
+                              <Text fill="#1e1e1e" fontSmoothingType="LCD" lineSpacing="1.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="league-wrapper-intro" text="Select and choose right league so you can see the data of live matches. All of the photos league title, fixture data and all desin principle are created and provided by individual freelance Java developer - Thant Zin Aung." wrappingWidth="371.0234375">
+                                 <font>
+                                    <Font name="Arial" size="11.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                           <padding>
+                              <Insets left="18.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="406.0">
+                           <children>
+                              <Button mnemonicParsing="false" onMouseClicked="#clickOnSeeMatchesButton" styleClass="see-matches-button" text="See Matches" />
+                           </children>
+                        </HBox>
+                     </children>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="0.6784313917160034" green="0.6784313917160034" blue="0.6784313917160034" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </VBox>
+                  <VBox fx:id="worldCupWrapper" layoutX="482.0" layoutY="667.0" onMouseEntered="#hoverOnLeagueWrapper" onMouseExited="#hoverExitOnLeagueWrapper" prefHeight="199.0" prefWidth="420.0" styleClass="league-wrapper">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" fillHeight="false" prefHeight="59.0" prefWidth="386.0" styleClass="league-title-wrapper">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="63.0" prefWidth="49.0">
+                                 <styleClass>
+                                    <String fx:value="league-logo" />
+                                    <String fx:value="world-cup-logo" />
+                                 </styleClass>
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </HBox>
+                              <VBox alignment="CENTER_LEFT" prefHeight="59.0" prefWidth="298.0" spacing="3.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="league-wrapper-title" text="World Cup">
+                                       <font>
+                                          <Font name="Arial Bold" size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="league-wrapper-sub-title" text="Country: World | Total matches: 5" />
+                                 </children>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="77.0" prefWidth="390.0">
+                           <children>
+                              <Text fill="#1e1e1e" fontSmoothingType="LCD" lineSpacing="1.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="league-wrapper-intro" text="Select and choose right league so you can see the data of live matches. All of the photos league title, fixture data and all desin principle are created and provided by individual freelance Java developer - Thant Zin Aung." wrappingWidth="371.0234375">
+                                 <font>
+                                    <Font name="Arial" size="11.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                           <padding>
+                              <Insets left="18.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="406.0">
+                           <children>
+                              <Button mnemonicParsing="false" onMouseClicked="#clickOnSeeMatchesButton" styleClass="see-matches-button" text="See Matches" />
+                           </children>
+                        </HBox>
+                     </children>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="0.6784313917160034" green="0.6784313917160034" blue="0.6784313917160034" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </VBox>
+               </children>
+            </FlowPane>
+         </children>
+      </VBox>
+   </content>
+</ScrollPane>

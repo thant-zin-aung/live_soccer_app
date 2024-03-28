@@ -1,0 +1,364 @@
+/*Doesn't work*/
+/*@font-face {*/
+/*    font-family: 'Roboto';*/
+/*    src: url('../fonts/Roboto-Light.ttf');*/
+/*    src: url('../fonts/Roboto-Regular.ttf');*/
+/*    src: url('../fonts/Roboto-Medium.ttf');*/
+/*    src: url('../fonts/Roboto-Bold.ttf');*/
+/*}*/
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Light.ttf');
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Medium.ttf');
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Bold.ttf');
+}
+
+.scrollpane .scroll-bar:vertical {
+    -fx-pref-width: 1px;
+}
+.root {
+    -fx-background-color: white;
+}
+.image-wrapper {
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+}
+.overlay {
+    -fx-background-color: white;
+    -fx-background-radius: 0 10px 10px 0;
+}
+.app-title-wrapper {
+    -fx-font-family: 'Roboto', sans-serif;
+    -fx-font-weight: bold;
+    -fx-font-size: 30px;
+    -fx-text-fill: linear-gradient(to right,#e90052,#38003c);
+}
+.sub-app-title-wrapper {
+    -fx-font-family: 'Roboto', sans-serif;
+    -fx-font-weight: bold;
+    -fx-font-size: 17px;
+}
+.app-intro {
+    -fx-font-family: 'Roboto', sans-serif;
+    -fx-font-weight: light;
+    -fx-font-size: 11px;
+    -fx-opacity: 0.9;
+}
+.go-back-title {
+    -fx-font-family: 'Roboto', sans-serif;
+    -fx-font-weight: bold;
+    -fx-font-size: 23px;
+}
+.go-back-text {
+    -fx-font-family: 'Roboto', sans-serif;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+.waiting-box-title {
+    -fx-font-family: 'Roboto', sans-serif;
+    -fx-font-size: 19px;
+    -fx-font-weight: bold;
+}
+.waiting-box-sub-title {
+    -fx-font-family: 'Roboto', sans-serif;
+    -fx-font-size: 15px;
+}
+.api-status,.go-back-intro-text  {
+    -fx-font-family: 'Roboto', sans-serif;
+    -fx-font-size: 11px;
+}
+.league-wrapper-title {
+    -fx-font-family: 'Roboto', sans-serif;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+.league-wrapper-sub-title {
+    -fx-font-family: 'Roboto', sans-serif;
+    -fx-font-size: 12px;
+}
+.league-wrapper-intro {
+    -fx-font-family: 'Roboto', sans-serif;
+    -fx-font-size: 11px;
+}
+
+.load-more-data-button,.see-matches-button {
+    -fx-background-color: linear-gradient(to right,#e90052,#38003c);
+    -fx-text-fill: white;
+    /*-fx-border-color: linear-gradient(to right,#e90052,#38003c);*/
+    /*-fx-border-style: solid;*/
+    /*-fx-border-width: 2px;*/
+    /*-fx-background-color: transparent;*/
+    /*-fx-text-fill: linear-gradient(to right,#e90052,#38003c);*/
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-pref-width: 180px;
+    -fx-pref-height: 40px;
+    -fx-font-family: 'Roboto', sans-serif;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+}
+.load-more-data-button:hover {
+    -fx-background-color: linear-gradient(to right,#e90052,#38003c);
+    -fx-text-fill: white;
+}
+.channel-overlay {
+    -fx-background-color: white;
+}
+.channel-wrapper {
+    -fx-background-color: white;
+}
+.channel-logo {
+    -fx-border-style: solid;
+    -fx-border-width: 1px;
+    -fx-border-color: black;
+    -fx-border-radius: 77px;
+}
+.info-overlay {
+    -fx-background-color: black;
+}
+.home-background-wrapper {
+    -fx-background-image: url('../images/backgrounds/home-background.png');
+}
+.premier-league-background-wrapper {
+    -fx-background-image: url('../images/backgrounds/premier_league_background.png');
+}
+.bundesliga-background-wrapper {
+    -fx-background-image: url('../images/backgrounds/bundesliga_background.png');
+}
+.serie-a-background-wrapper {
+    -fx-background-image: url('../images/backgrounds/serie_a_background.png');
+}
+.la-liga-background-wrapper {
+    -fx-background-image: url('../images/backgrounds/la_liga_background.png');
+}
+.ligue-1-background-wrapper {
+    -fx-background-image: url('../images/backgrounds/ligue_1_background.png');
+}
+.uefa-champion-league-background-wrapper {
+    -fx-background-image: url('../images/backgrounds/uefa_champion_league_background.png');
+}
+.uefa-europa-league-background-wrapper {
+    -fx-background-image: url('../images/backgrounds/uefa_europa_league_background.png');
+}
+.england-championship-background-wrapper {
+    -fx-background-image: url('../images/backgrounds/england_championship_background.png');
+}
+.england-fa-cup-background-wrapper {
+    -fx-background-image: url('../images/backgrounds/england_fa_cup_background.png');
+}
+.euro-championship-background-wrapper {
+    -fx-background-image: url('../images/backgrounds/euro_championship_background.png');
+}
+.world-cup-background-wrapper {
+    -fx-background-image: url('../images/backgrounds/world_cup_background.png');
+}
+.back-wrapper {
+    -fx-background-color: black;
+}
+.go-back-button {
+    -fx-background-color: black;
+    -fx-border-color: white;
+    -fx-border-width: 1px;
+    -fx-border-style: solid;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+}
+.go-back-button:hover {
+    -fx-effect: dropshadow( three-pass-box , white , 10, 0 , 0, 0);
+}
+
+.flowpane {
+    -fx-background-color: white;
+}
+.league-wrapper {
+    -fx-background-color: white;
+    -fx-border-color: white;
+    -fx-border-style: solid;
+    -fx-border-width: 1px;
+    -fx-padding: 7px;
+    -fx-border-radius: 7px;
+    -fx-background-radius: 7px;
+}
+.league-wrapper:hover {
+    -fx-border-color: #e90052;
+    -fx-effect: dropshadow( three-pass-box , #38003c , 10, 0 , 0, 0);
+    /*-fx-border-color: linear-gradient(to right,#e90052,#38003c);*/
+    /*-fx-border-style: solid;*/
+    /*-fx-border-width: 1px;*/
+}
+.league-title-wrapper {
+    /*-fx-background-radius: 7px;*/
+}
+.league-logo {
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    /*-fx-background-position: center;*/
+}
+.premier-league-logo {
+    -fx-background-image: url('../images/league_logos/premier_league_logo.png');
+}
+.bundesliga-logo {
+    -fx-background-image: url('../images/league_logos/bundesliga_logo.png');
+}
+.serie-a-logo {
+    -fx-background-image: url('../images/league_logos/serie_a_logo.png');
+}
+.la-liga-logo {
+    -fx-background-image: url('../images/league_logos/la_liga_logo.png');
+}
+.ligue-1-logo {
+    -fx-background-image: url('../images/league_logos/ligue_1_logo.png');
+}
+.uefa-champion-league-logo {
+    -fx-background-image: url('../images/league_logos/uefa_champion_league_logo.png');
+}
+.uefa-europa-league-logo {
+    -fx-background-image: url('../images/league_logos/uefa_europa_league_logo.png');
+}
+.england-championship-logo {
+    -fx-background-image: url('../images/league_logos/england_championship_logo.png');
+}
+.england-fa-logo {
+    -fx-background-image: url('../images/league_logos/england_fa_cup_logo.png');
+}
+.euro-championship-logo {
+    -fx-background-image: url('../images/league_logos/euro_championship_logo.png');
+}
+.world-cup-logo {
+    -fx-background-image: url('../images/league_logos/fifa_world_cup_logo.png');
+}
+
+.see-matches-button {
+    -fx-pref-width: 400px;
+    -fx-pref-height: 40px;
+}
+
+.progress-bar {
+    -fx-accent: red;
+    -fx-pref-height: 16px;
+}
+.progress-bar > .track {
+    -fx-text-fill: white;
+    -fx-text-box-border: none;
+}
+.top-bottom-progress-bar {
+    -fx-pref-width: 1150px;
+}
+.waiting-box {
+    -fx-border-style: dashed;
+    -fx-border-color: black;
+    -fx-border-width: 1px 0;
+}
+
+/* Watch option styles */
+.english-title-wrapper {
+    -fx-background-color: linear-gradient(to right,#e90052,#38003c);
+}
+.english-title {
+    -fx-font-family: 'Roboto', sans-serif;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill : white;
+}
+.english-sub-title {
+    -fx-font-family: 'Roboto', sans-serif;
+    -fx-font-size: 11px;
+    -fx-text-fill : white;
+    -fx-text-alignment: center;
+}
+.play-button {
+    -fx-background-color: linear-gradient(to bottom,#e90052,#38003c);
+    -fx-background-radius: 5px;
+}
+.play-button:hover {
+    -fx-effect: dropshadow( three-pass-box , #EC6F9B , 60, 0.5 , 0, 0);
+}
+.play-button-title {
+    -fx-font-family: 'Roboto', sans-serif;
+    -fx-font-size: 19px;
+    -fx-font-weight: bold;
+    -fx-text-fill : white;
+}
+.play-button-sub-title {
+    -fx-font-family: 'Roboto', sans-serif;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+.play-button-sub-title-2 {
+    -fx-font-family: 'Roboto', sans-serif;
+    -fx-font-size: 11px;
+
+}
+.play-button-sub-title-2-wrapper {
+    -fx-background-color: white;
+    -fx-background-radius: 1px;
+    -fx-pref-height: 20px;
+}
+.play-button-intro {
+    -fx-font-family: 'Roboto', sans-serif;
+    -fx-font-size: 11px;
+    -fx-text-alignment: center;
+}
+
+.rectangle-overlay {
+    -fx-border-width: 0px;
+    -fx-stroke: none;
+    -fx-fill: black;
+    -fx-opacity: 0.8;
+}
+.match-live-badge-wrapper {
+    -fx-background-color: red;
+    -fx-background-radius: 25px;
+}
+.match-live-dot {
+    -fx-fill: white;
+    -fx-stroke: none;
+}
+.match-live-text {
+    -fx-text-fill: white;
+    -fx-font-family: 'Roboto', sans-serif;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-text-alignment: center;
+}
+.watch-info-title {
+    -fx-font-family: 'Roboto', sans-serif;
+    -fx-font-size: 17px;
+    -fx-font-weight: bold;
+}
+.watch-info-sub-title {
+    -fx-font-family: 'Roboto', sans-serif;
+    -fx-font-size: 11px;
+}
+.play-team-name {
+    -fx-font-family: 'Roboto', sans-serif;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+.play-match-time {
+    -fx-font-family: 'Roboto', sans-serif;
+    -fx-font-size: 70px;
+    -fx-font-weight: bold;
+}
+.play-match-date {
+    -fx-font-family: 'Roboto', sans-serif;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+.watch-info-intro {
+    -fx-font-family: 'Roboto', sans-serif;
+    -fx-font-size: 11px;
+}
